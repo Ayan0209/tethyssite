@@ -53,7 +53,7 @@ router.get("/about", (req,res)=> {
   res.render('about', { title: "About Us | Tethys", layout:"layout", team: team });
 });
 
-router.get("/", (req,res)=> {
+router.get('/', (req,res)=> {
   res.render('index', { title: "About Us | Tethys", layout:"layout", team: team });
 });
 
