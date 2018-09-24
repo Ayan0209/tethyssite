@@ -21,7 +21,7 @@
             together bring on table a passion to lead our nation to greater heights as part of the global
             prosperity.</p> -->
     </div>
-    
+
     <div id="work" class="pb-0 mb-0 text-center">
         <h1 class="text-info font-40 my-3"><b>Our Work</b></h1>
         <br>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="carousel-item habs-80">
                         <img class="d-block w-100 h-100" src="/images/citycentre.jpeg" alt="Second slide" style="border-radius: 0.5rem;">
-                        
+
                     </div>
                     <div class="carousel-item habs-80">
                         <img class="d-block w-100 h-100" src="/images/cascade.jpeg" alt="Third slide" style="border-radius: 0.5rem;">
@@ -69,10 +69,35 @@
     </div>
     <br><br>
     <hr>
+
+    <div class="container-fluid text-center pt-3 px-auto w-100 b0gray" id="team">
+        <h1 class="text-info font-45">Our Team</h1>
+            <br>
+            <p class="text-justify mx-auto  col-md-6 col-lg-6 col-sm-12  font-20">TETHYS team comprises of multidisciplinary professionals who have a rich work experience and diverse
+                professional backgrounds. It consists of people with senior background in Engineering, Urban Planning, Infrastructure Design,  Water, Environmental Sanitation, Energy, Natural Resource Management, Inclusive Social Development, Architecture, Project Management, Planning, Monitoring and Evaluation.</p>
+            <br>
+            <div class="row m-lg-4 m-sm-1 py-auto my-5 mx-auto" id="teammembers">
+                {{#each team}}
+                <div class="col-lg-4 col-md-4 col-sm-12 m-auto h-100 teambox">
+                    <div class="inner text-center p-2">
+                        <img src="/images/{{this.image}}" width="200px;" height="200px;" class="img-fluid  img-rounded my-2" alt="">
+                        <br>
+                        <h4 class="m-1">{{this.name}}</h4>
+                        <h6 class="m-1">{{this.about}}</h6>
+                    </div>
+                    <div style="background:rgba(91,192,222, 0.2); vertical-align: middle; display: flex; overflow: auto;" class="h-100  py-auto px-4 outer">
+                        <p class="my-auto py-3" >{{this.description}}</p>
+                    </div>
+
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
     <div id="contact" class="pb-0 mb-0 pt-1 text-center">
         <h1 class="text-info font-40 m-4"><b>Reach Us At</b></h1>
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCvSScaYhCTMASLqfLk5LlBhmp8h8K1uR0'></script>
-        <div style='overflow:hidden;' class="w-100 row ml-0 b0g">   
+        <div style='overflow:hidden;' class="w-100 row ml-0 b0g">
             <div id='gmap_canvas' style='height:400px;' class="col-md-7 col-lg-7 col-sm-12">
             </div>
             <div class="p-auto valm col-md-5 col-lg-5 col-sm-12 d-flex bg-dimWhite">
@@ -80,14 +105,14 @@
             </div>
             <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
         </div>
-        <a href='https://embed-map.org/'>google map widget for website</a> 
+        <a href='https://embed-map.org/'>google map widget for website</a>
         <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=4de8664aa4addac451082b7b7c7677f4233ad592'></script>
         <script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(28.4661363,77.52072290000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(28.4661363,77.52072290000001)});infowindow = new google.maps.InfoWindow({content:'<strong>Tethys Development Services</strong><br>18 A DEL Court Jaypee Greens <br>201306 Greater Noida<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
     </div>
     <br>
     <div class="w-100 p-3 text-center" id="support">
         <h1 class="text-info font-40"><b>Request for Support</b></h1>
-    
+
         <form action="/contactus" class="m-auto col-lg-6 col-md-6 col-sm-10 my-3 py-3 w-100" method="POST">
             <div class="form-group">
                 <input type="text"  class="form-control" style="font-size: 1.2rem; height: auto;"  name="name" id="name" placeholder="Name" required>
@@ -102,7 +127,7 @@
         </form>
     </div>
 </div>
-    
+
     <!-- <script>
         $(".form-control-custom").addClass("p-2");
         $(".form-control-custom").addClass("w-100");
