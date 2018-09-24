@@ -1,0 +1,96 @@
+<div class="container-fluid text-center pt-3 px-auto w-100 b0gray" id="about">
+    <h1 class="text-info my-2 font-45">About Us</h1>
+    
+    <div class="w-100 h-100 m-0 p-0 row py-4">
+        <div class="col-md-6 col-lg-6 col-sm-12 m-auto">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner b0g" style="box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem #ddd; border-radius: 1rem;">
+                    <div class="carousel-item active habs-50">
+                        <img class="d-block w-100" src="/images/Award.jpeg" alt="First slide">
+                    </div>
+                    <div class="carousel-item habs-50">
+                        <img class="d-block w-100" src="/images/citycentre.jpeg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item habs-50">
+                        <img class="d-block w-100" src="/images/cascade.jpeg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+        </div>
+        <p class="text-justify col-md-6 col-lg-6 col-sm-12 m-auto p-3 px-5">TETHYS is a consortium of highly specialized professionals that have previously served in the
+                United Nations, The World Bank, Governments at the National, State and District level, Bilateral
+                Institutions and International organizations and have now come together with a mission to give
+                back to society a more sustainable and healthy living environment.
+                The responsible business practice at TETHYS offers integrated solutions on strategy, last mile
+                delivery, integrating programmes with the government, and developing partnerships for
+                convergence of efforts to provide a multiplier effect. We offer evidence-based advice to match
+                recurrent development problems with proven strategies, methods and tools to achieve equitable
+                solutions.
+                Our programme management initiative provides us an opportunity to engage closely with public
+                policy and decision making process. An indication of our programme management expertise
+                comes from our initiatives on management of risk of varied nature including climate change.
+                </p>
+                <p class="w-100 text-justify p-4 "> TETHYS takes up quantitative and qualitative (participatory) research, both fundamental and
+                applied, as a part of knowledge-based or customized services. The in-house data analytic center
+                and network with the field resources enables us to provide single-window services to a largescale
+                data based research.
+                TETHYS has proficiency in developing knowledge based products encompassing sector specific
+                know-how as well as data management and disseminating this knowledge through capacity
+                building services to a variety of organizations. The perfect interweave between these
+                competencies enable TETHYS to develop a self-sufficient system for integrated support to
+                organizations working on development issues.
+                Tethys also provides a credible platform facilitating companies, donor agencies, philanthropists
+                and foundations to achieve their specific CSR goals and make informed decisions that translate
+                into purposeful action and large-scale social impact.</p>
+                
+        <br>
+    </div>
+</div>
+<div class="container-fluid text-center pt-3 px-auto w-100 b0gray" id="team">
+    <h1 class="text-info font-45">Our Team</h1>
+        <br>
+        <p class="text-justify mx-auto  col-md-6 col-lg-6 col-sm-12  font-20">TETHYS team comprises of multidisciplinary professionals who have a rich work experience and diverse
+            professional backgrounds. It consists of people with senior background in Engineering, Urban Planning, Infrastructure Design,  Water, Environmental Sanitation, Energy, Natural Resource Management, Inclusive Social Development, Architecture, Project Management, Planning, Monitoring and Evaluation.</p>
+        <br>
+        <div class="row m-lg-4 m-sm-1 py-auto my-5 mx-auto" id="teammembers">
+            {{#each team}}
+            <div class="col-lg-4 col-md-4 col-sm-12 m-auto h-100 teambox">
+                <div class="inner text-center p-2">
+                    <img src="/images/{{this.image}}" width="200px;" height="200px;" class="img-fluid  img-rounded my-2" alt="">
+                    <br>
+                    <h4 class="m-1">{{this.name}}</h4>
+                    <h6 class="m-1">{{this.about}}</h6>
+                </div>
+                <div style="background:rgba(91,192,222, 0.2); vertical-align: middle; display: flex; overflow: auto;" class="h-100  py-auto px-4 outer">
+                    <p class="my-auto py-3" >{{this.description}}</p>
+                </div>
+                
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+<script>
+    function changeContent(e){
+        e.children[1].classList.remove("d-none");
+        e.children[0].classList.add("d-none");
+    }
+    function retrieveContent(e){
+        e.children[0].classList.remove("d-none");
+        e.children[1].classList.add("d-none");
+    }
+</script>
+
