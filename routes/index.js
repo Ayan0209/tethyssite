@@ -46,15 +46,11 @@ var team = [
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Tethys Development Services' , layout: "layout"});
+  res.render('index', { title: 'Tethys Development Services' , layout: "layout", team: team});
 });
 
 router.get("/about", (req,res)=> {
   res.render('about', { title: "About Us | Tethys", layout:"layout", team: team });
-});
-
-router.get('/', (req,res)=> {
-  res.render('index', { title: "About Us | Tethys", layout:"layout", team: team });
 });
 
 router.get("/events", (req,res)=> {
