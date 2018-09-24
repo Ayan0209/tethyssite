@@ -128,6 +128,17 @@
     </div>
 </div>
 
+<script>
+    function changeContent(e){
+        e.children[1].classList.remove("d-none");
+        e.children[0].classList.add("d-none");
+    }
+    function retrieveContent(e){
+        e.children[0].classList.remove("d-none");
+        e.children[1].classList.add("d-none");
+    }
+</script>
+
     <!-- <script>
         $(".form-control-custom").addClass("p-2");
         $(".form-control-custom").addClass("w-100");
