@@ -17,6 +17,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/png" href="/images/Logo.png"/> -->
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Bellefair|Lato|Lobster|Lora|Noto+Serif+JP|Roboto|Zilla+Slab" rel="stylesheet">       <style>
         *{
           font-family: 'Noto Serif JP', sans-serif;
@@ -24,6 +27,9 @@
       </style>
   </head>
   <body class="container-fluid m-0 p-0">
+      <script>
+          AOS.init();
+        </script>
     {{>navbar}}
     {{{body}}}
     {{>footer}}
