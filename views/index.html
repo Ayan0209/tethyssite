@@ -72,6 +72,29 @@
     </div>
     <br><br>
     <hr>
+    <div class="container-fluid text-center pt-3 px-auto w-100 b0gray container " id="team">
+    <h1 class="text-info font-45">Our Team</h1>
+    <br>
+    <p class="text-justify mx-auto  col-md-8 col-lg-8 col-sm-12  font-20">TETHYS team comprises of multidisciplinary professionals who have a rich work experience and diverse
+        professional backgrounds. It consists of people with senior background in Engineering, Urban Planning, Infrastructure Design,  Water, Environmental Sanitation, Energy, Natural Resource Management, Inclusive Social Development, Architecture, Project Management, Planning, Monitoring and Evaluation.</p>
+    <br>
+    <div class="row m-lg-4 m-sm-1 py-auto my-5 mx-auto" id="teammembers" >
+        {{#each team}}
+        <div class="col-lg-4 col-md-4 col-sm-12 m-auto h-100 teambox" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="inner text-center p-2" >
+                <img src="/images/{{this.image}}" width="200px;" height="200px;" class="img-fluid img-rounded my-2" alt="">
+                <br>
+                <h4 class="m-1">{{this.name}}</h4>
+                <h6 class="m-1">{{this.about}}</h6>
+            </div>
+            <div style="background:rgba(91,192,222, 0.2); vertical-align: middle; display: flex; overflow: auto;" class="h-100  py-auto px-4 outer">
+                <p class="my-auto py-3" >{{this.description}}</p>
+            </div>
+            
+        </div>
+        {{/each}}
+    </div>
+    </div>
     <div id="contact" class="pb-0 mb-0 pt-1 text-center">
         <h1 class="text-info font-40 m-4"><b>Reach Us At</b></h1>
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCvSScaYhCTMASLqfLk5LlBhmp8h8K1uR0'></script>
