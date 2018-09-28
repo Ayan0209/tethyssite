@@ -46,7 +46,7 @@ var team = [
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Tethys Development Services' , layout: "layout"});
+  res.render('index', { title: 'Tethys Development Services' , layout: "layout", team: team});
 });
 
 router.get("/about", (req,res)=> {
