@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var mailer = require('nodemailer');
 
-var smtpTransport = mailer.createTransport("smtps://YOUREMAIL%40gmail.com:"+encodeURIComponent('PASSWORD') + "@smtp.gmail.com:465");
+var smtpTransport = mailer.createTransport("smtps://YOUREMAIL%40gmail.com:"+encodeURIComponent('PASSWORD') + "@smtp.gmail.com:465"); 
 
 var team = [
   {
@@ -41,12 +41,12 @@ var team = [
     about: "Development Planning & Management consultant",
     description: "Mr. K Nagasreenivas is a Development Planning & Management consultant with 21 years of experience in urban infrastructure planning & financing, rural systems development and infrastructure integration. With a Master’s degree in Urban Engineering and Bachelor’s degree in Civil Engineering (B.E.), he has worked full-time in different capacities at international bilateral institution, grant-making not-for-profit national foundation, national management consultancy and international development sector agency. He has successfully contributed to 80+ projects so far on programme management and institutional development (10 years) and consultancy services (11 years). His scale of urban sectoral experience includes slums, areas/zones, city, regional, policy development; pilot projects to institutional reforms. He brings to the team extensive experience in projects aided by international agencies, aided projects, Government projects and private sector. He is well aware of the planning nuances in many states of India, viz. Tamil Nadu, Karnataka, Tripura, Andaman & Nicobar Islands, Uttar Pradesh, Andhra Pradesh, Telangana, Himachal Pradesh, Kerala, and Chhattisgarh and linguistically able to communicate in 6 languages.",
     image: "Srinivas.jpeg"
-  }
+  }  
 ]
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Tethys Development Services' , layout: "layout", team: team});
+  res.render('index', { title: 'Tethys Development Services' , layout: "layout"});
 });
 
 router.get("/about", (req,res)=> {
