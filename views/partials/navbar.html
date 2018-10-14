@@ -1,49 +1,88 @@
 <nav class="navbar navbar-expand-lg navbar-dark text-center habs-10 b0gray ">
-    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-    <button class="navbar-toggler" style="background: #aaa;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+  <button class="navbar-toggler" style="background: #aaa;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-      <a href="/"><img src="/images/Logo.png" class="float-left"    alt="" height="70vh" data-aos="zoom-in" data-aos-duration="1200"></a> 
-      <ul class="navbar-nav ml-auto float-right" style="">
-        <li class="nav-item active" data-aos="zoom-in" data-aos-duration="700">
-          <a class="h-100 w-100 nav-link" style="color: rgb(1, 129, 129);" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-         <li class="nav-item active" data-aos="zoom-in" data-aos-duration="700">
-            <a class="h-100 w-100 nav-link" style="color: rgb(1, 129, 129);" href="/about/#">About Tethys</a>
-            
-          </li>
-        <!-- <li class="nav-item active">
-          <a class="h-100 w-100 nav-link" style="color: rgb(1, 129, 129);" href="/about">About Us</a>
+  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+    <a href="/"><img src="/images/Logo.png" class="float-left"    alt="" height="70vh" data-aos="zoom-in" data-aos-duration="1200"></a> 
+    <a href="/"><img src="/images/IDCtethys.jpeg" class="float-left mx-md-4 mx-lg-4 mx-sm-3"    alt="" height="70vh" data-aos="zoom-in" data-aos-duration="1200"></a> 
+    <ul class="navbar-nav ml-auto float-right" style="">
+      <li class="nav-item active" data-aos="zoom-in" data-aos-duration="700">
+        <a class="h-100 w-100 nav-link" style="color: rgb(1, 129, 129);" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <!-- <li class="nav-item dropdown" data-aos="zoom-in" data-aos-duration="700">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="color: rgb(1, 129, 129);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="/about/#">About Tethys</a><hr>
+            <a class="dropdown-item" href="/about/#team">Our Team</a>      
         </li> -->
-        <li class="nav-item active" data-aos="zoom-in" data-aos-duration="700">
-          <a class="h-100 w-100 nav-link" style="color: rgb(1, 129, 129);" href="/#work">Our Work</a>
-        </li>
-      </ul>
-      &nbsp;
-      <img src="/images/SSU.PNG" alt="" height="70vh">
-      <img src="/images/SBA.jpeg" alt="" height="70vh">
-    </div>
-  </nav>
 
-  <script>
-  $(document).ready(function(){
-    $(".navbar-nav li").click(function(e){
-      var x=$(".navbar-nav li")
-      for(var i=0;i<x.length;i++)
-      {
-        var elem= x[i];
-        elem.classList. remove("active");   
-      }
+      <li class="nav-item active" data-aos="zoom-in" data-aos-duration="700">
+        <a class="h-100 w-100 nav-link" style="color: rgb(1, 129, 129);" href="/about/">About Us<span class="sr-only">(current)</span></a>
+      </li>
+      
+      <!-- <li class="nav-item active">
+        <a class="h-100 w-100 nav-link" style="color: rgb(1, 129, 129);" href="/about">About Us</a>
+      </li> -->
 
-      var $this = $(this);
-      if (!$this.y.classList.contains("active")) {
-          $this.classList.add('active');
-      }
-    })
+
+      <!-- <li class="nav-item active" data-aos="zoom-in" data-aos-duration="700">
+        <a class="h-100 w-100 nav-link" style="color: rgb(1, 129, 129);" href="/#work">Our Work</a>
+      </li> -->
+
+      <li class="nav-item dropdown" data-aos="zoom-in" data-aos-duration="700" style="z-index: 10000;">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="color: rgb(1, 129, 129);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Our Work
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item bg-white" href="/#work" style="background: #000; width:inherit;" >State</a><hr>
+          <a class="dropdown-item bg-white" href="/#work" style="background: #000; width:inherit;" >Mathura-Vrindavan</a><hr>
+          <a class="dropdown-item bg-white" href="/#work" style="background: #000; width:inherit;" >Agra</a><hr>   
+          <a class="dropdown-item bg-white" href="/#work" style="background: #000; width:inherit;" >Aligarh</a>
+        </div>
+      </li>
+
+
+      <!-- <li class="nav-item active" data-aos="zoom-in" data-aos-duration="700">
+        <a class="h-100 w-100 nav-link" style="color: rgb(1, 129, 129);" href="/events">Events</a>
+      </li>
+      <li class="nav-item active" data-aos="zoom-in" data-aos-duration="700">
+          <a class="h-100 w-100 nav-link" style="color: rgb(1, 129, 129);" href="/resources">Resources</a>
+      </li>
+      <li class="nav-item active" data-aos="zoom-in" data-aos-duration="700">
+          <a class="h-100 w-100 nav-link" style="color: rgb(1, 129, 129);" href="/news">News</a>
+      </li> -->
+      <li class="nav-item active " data-aos="zoom-in" data-aos-duration="700">
+          <a class="h-100 w-100 nav-link" style="color: rgb(1, 129, 129);" href="/#support">Request For Support</a>
+      </li>
+    </ul>
+    &nbsp;
+    <img src="/images/SSU.PNG" alt="" height="70vh">
+    <img src="/images/SBA.jpeg" alt="" height="70vh">
+  </div>
+</nav>
+
+<script>
+$(document).ready(function(){
+  $(".navbar-nav li").click(function(e){
+    var x=$(".navbar-nav li")
+    for(var i=0;i<x.length;i++)
+    {
+      var elem= x[i];
+      elem.classList. remove("active");   
+    }
+
+    var $this = $(this);
+    if (!$this.y.classList.contains("active")) {
+        $this.classList.add('active');
+    }
   })
-  $(".nav-item a").addClass("ffLato");
-  $(".nav-item a").addClass("font-20");
-  $(".nav-item a").addClass("mx-1");
-  </script>
+})
+$(".nav-item a").addClass("ffLato");
+$(".nav-item a").addClass("font-20");
+$(".nav-item a").addClass("mx-1");
+</script>
